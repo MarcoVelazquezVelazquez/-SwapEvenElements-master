@@ -6,6 +6,10 @@ public class IntArrayUtil {
 
 	public static void swapEven(int[] array) {
 		// TODO: Implement this method.
+		if (array == null || array.length == 0){
+			return;
+		}
+
 		int start = 0;                         // Start index
 		int end = array.length - 1;            // End index
 
@@ -26,7 +30,7 @@ public class IntArrayUtil {
 
 
 	public static void main(String[] args) {
-		/*{
+		{
 			int[] array = null;
 			swapEven(array);
 			System.out.println(Arrays.toString(array));
@@ -35,7 +39,7 @@ public class IntArrayUtil {
 			int[] array = new int[]{};
 			swapEven(array);
 			System.out.println(Arrays.toString(array));
-		}*/
+		}
 		{
 			int[] array = new int[]{10, 5, 3, 4};
 			swapEven(array);
